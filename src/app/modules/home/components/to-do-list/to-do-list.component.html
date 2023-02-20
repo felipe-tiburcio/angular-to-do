@@ -11,7 +11,9 @@
   </ul>
 </section>
 
-<app-to-do-input-add-items></app-to-do-input-add-items>
+<app-to-do-input-add-items
+  (emitItemTaskList)="setEmitTaskList($event)"
+></app-to-do-input-add-items>
 <app-to-do-button-delete-all
   (click)="deleteAllTaskList()"
   *ngIf="taskList.length"

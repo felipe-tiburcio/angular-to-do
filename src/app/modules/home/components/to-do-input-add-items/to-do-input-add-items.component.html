@@ -1,1 +1,6 @@
-<input type="text" placeholder="Type the next to do here" />
+<input
+  type="text"
+  placeholder="Type the next to do here"
+  [(ngModel)]="addItemTaskList"
+  (keyup.enter)="submitItemTaskList()"
+/>
